@@ -1,11 +1,11 @@
 /*
  * Description:		Library for interfacing with hardware features of the Creality CR10 / Ender 3 board
- * Name:			CR10.h
- * Created:			08.12.2020
- * Author:			Adam Zilizi
- * License:			Open-source 
- * Core:			Atmel ATmega1284p
- * Last update:		12.12.2020
+ * Name:    		CR10.h
+ * Created: 		08.12.2020
+ * Author:  		Adam Zilizi
+ * License:  		Open-source 
+ * Core:    		Atmel ATmega1284p
+ * Last update: 	12.12.2020
  * Test Desc:		Tested with standalone test programs and the cr10_protocol_v1 program
  * Published on:	https://github.com/Abrams-ZiZi
  */

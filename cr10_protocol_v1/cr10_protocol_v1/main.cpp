@@ -1,10 +1,10 @@
 /*
  * Description:		Protocol for a Creality CR10 / Ender 3 board
- * Name:		cr10_protocol_v1.cpp
- * Created:		12.12.2020
- * Author:		Adam Zilizi
- * License:		Open-source 
- * Core:		Atmel ATmega1284p
+ * Name:    		cr10_protocol_v1.cpp
+ * Created:  		12.12.2020
+ * Author:  		Adam Zilizi
+ * License: 		Open-source 
+ * Core:    		Atmel ATmega1284p
  * Last update:		12.12.2020
  * Test Desc:		Tested with Windows 10 PC through PuTTY
  * Published on:	https://github.com/Abrams-ZiZi
