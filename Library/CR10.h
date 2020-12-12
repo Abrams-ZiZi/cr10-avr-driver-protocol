@@ -1,10 +1,10 @@
 /*
  * Description:		Library for interfacing with hardware features of the Creality CR10 / Ender 3 board
- * Name:			CR10.h
- * Created:			08.12.2020
- * Author:			Adam Zilizi
- * License:			Open-source 
- * Core:			Atmel ATmega1284p
+ * Name:		CR10.h
+ * Created:		08.12.2020
+ * Author:		Adam Zilizi
+ * License:		Open-source 
+ * Core:		Atmel ATmega1284p
  * Last update:		12.12.2020
  * Test Desc:		Tested with standalone test programs and the cr10_protocol_v1 program
  * Published on:	https://github.com/Abrams-ZiZi
@@ -103,7 +103,7 @@ uint16_t ReadADC(uint8_t channel) {
 
 // Function to initialize the Thermistors
 // Rspec - rated resistance of the thermistor (this is the thermistor's resistance at Cspec)
-// Cspec - rated temperature of the thermistor (usually 25 [°C])
+// Cspec - rated temperature of the thermistor (usually 25 [Â°C])
 // Bspec - Beta value of the thermistor (100k thermistors have their Beta value usually around 4000 - 4500)
 void InitTherm(uint8_t channel, float Rspec, float Cspec, float Bspec) {
 	InitADC(); // the ADC is initialized
