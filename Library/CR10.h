@@ -103,7 +103,7 @@ uint16_t ReadADC(uint8_t channel) {
 
 // Function to initialize the Thermistors
 // Rspec - rated resistance of the thermistor (this is the thermistor's resistance at Cspec)
-// Cspec - rated temperature of the thermistor (usually 25 [°C])
+// Cspec - rated temperature of the thermistor (usually 25 [Â°C])
 // Bspec - Beta value of the thermistor (100k thermistors have their Beta value usually around 4000 - 4500)
 void InitTherm(uint8_t channel, float Rspec, float Cspec, float Bspec) {
 	InitADC(); // the ADC is initialized
@@ -302,7 +302,7 @@ void StepperAngle(uint8_t channel, uint8_t direction, float angle) {
 
 // Function to rotate the stepper motors
 // direction - 'C' - clock-wise; 'A' - anti-clockwise
-// microsteps - number of microsteps (1/16th) to rotate (to calculate back to angles just divide the single-step datasheet spec with 16)
+// microsteps - number of microsteps (1/16th) to rotate (to calculate back to an angle (in degrees) just divide the single-step datasheet spec with 16)
 void StepperStep(uint8_t channel, uint8_t direction, uint32_t microsteps) {
 	// channel X
 	if (channel == 1 || channel ==  'X') {
@@ -443,7 +443,7 @@ uint8_t TriggeredEndstop(uint8_t channel) {
 		else {
 			currentPressedX = 0;
 		}
-		// check if the button transition from not being pressed to being pressed
+		// check if the button transitioned from not being pressed to being pressed
 		if (currentPressedX == 1 && previousPressedX == 0) {
 			return 1;
 		}
@@ -462,7 +462,7 @@ uint8_t TriggeredEndstop(uint8_t channel) {
 		else {
 			currentPressedY = 0;
 		}
-		// check if the button transition from not being pressed to being pressed
+		// check if the button transitioned from not being pressed to being pressed
 		if (currentPressedY == 1 && previousPressedY == 0) {
 			return 1;
 		}
@@ -481,7 +481,7 @@ uint8_t TriggeredEndstop(uint8_t channel) {
 		else {
 			currentPressedZ = 0;
 		}
-		// check if the button transition from not being pressed to being pressed
+		// check if the button transitioned from not being pressed to being pressed
 		if (currentPressedZ == 1 && previousPressedZ == 0) {
 			return 1;
 		}
